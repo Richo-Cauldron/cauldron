@@ -43,7 +43,6 @@ module.exports = {
           { loader: "css-loader" }
         ]
       }
-
     ]
   },
   resolve: {

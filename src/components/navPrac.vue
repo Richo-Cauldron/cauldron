@@ -10,13 +10,13 @@
     <b-collapse is-nav id="nav_collapse">
       
       <b-nav is-nav-bar>
-        <b-nav-item to="/home">Home</b-nav-item>
-        <b-nav-item to="/about">About</b-nav-item>
+        <b-nav-item to="/home"><i class="fa fa-home" aria-hidden="true"></i>Home</b-nav-item>
+        <b-nav-item to="/about"><i class="fa fa-book" aria-hidden="true"></i>About</b-nav-item>
         <b-nav-item>Contact Us</b-nav-item>
       </b-nav>
       
       <b-nav is-nav-bar class="ml-auto">
-        <b-nav-item to="/about">About</b-nav-item>
+        <c-login-modal></c-login-modal>
         <!-- Navbar dropdowns -->
         <b-nav-item-dropdown text="Lang" right>
           <b-dropdown-item to="#">EN</b-dropdown-item>
@@ -42,12 +42,19 @@
 </template>
 
 <script>
+  import Modal from './Modal.vue';
 	export default {
+    components: {
+      'c-login-modal': Modal
+    },
 		data() {
 			return {
-
+        
 			}
-		}
+    },
+      methods: {
+        
+      }
 	}
 </script>
 

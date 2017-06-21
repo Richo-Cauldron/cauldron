@@ -3,8 +3,8 @@
     <c-navbar></c-navbar>
     <div class="container">
        <router-view></router-view>
-       <cauldron-footer></cauldron-footer>
     </div>
+    <c-footer></c-footer>
    
     <!-- <c-alert></c-alert> -->
   </div>
@@ -18,11 +18,11 @@
   import footer from './components/Footer.vue';
   export default {
     components: {
-      'c-alert' : alert,
+      // 'c-alert' : alert,
       'c-navbar': navbar,
       'home-page': home,
       'about-page': about,
-      'cauldron-footer': footer
+      'c-footer': footer
     },
     data() {
       return {
